@@ -1,0 +1,120 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+   	background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    background-color: #ffffff;
+    font-family: 'Lato';
+}
+
+.contener{
+	margin:0;
+    padding:0;
+}
+
+.row{
+	margin:0;
+}
+
+.logoLB{
+	margin-top: 10px;
+}
+
+.logoLB img {
+	width: 100%;
+}
+
+.link {
+	color: #337AB7;
+	font-weight: bold;
+	font-size: medium;
+}
+
+.kafel{
+	margin-top: 15%;
+	display: block;
+	height: 28vh;
+	padding: 0;
+	text-align:center;
+	width: 100%;
+}
+
+.kafel img {
+	margin: auto;
+	height: 100%;
+}
+
+.kafel_kontakt > img {
+	height: 70%;
+}
+
+.text_kafel {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.text-footer {
+	font-size: medium;
+}
+
+.text-design {
+	font-size: x-small;
+}
+
+@media only all and (min-width: 768px) {
+    .kafel {
+        -webkit-transition: -webkit-transform 0.3s ease;
+        -moz-transition: -moz-transform 0.3s ease;
+        -ms-transition: -ms-transform 0.3s ease;
+        -o-transition: -o-transform 0.3s ease;
+        transition: transform 0.3s ease;
+    }
+    .kafel:hover {
+        -moz-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+@media only all and (max-width: 767px) {
+    body {
+        height: auto;
+        background-image: none;
+    }
+ 
+     .kafel {
+     	margin-top: 3%;
+     }
+    .footer {
+        position: relative;
+        height: auto;
+        line-height: 22px;
+        padding: 10px 0;
+    }
+    
+}
